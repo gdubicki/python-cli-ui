@@ -302,7 +302,7 @@ By default (‘auto’), only use color when output is a terminal.</li>
 <h3><a class="toc-backref" href="#id8">Progress messages</a><a class="headerlink" href="#progress-messages" title="Permalink to this headline">¶</a></h3>
 <dl class="function">
 <dt id="cli_ui.dot">
-<code class="descclassname">cli_ui.</code><code class="descname">dot</code><span class="sig-paren">(</span><em>*</em>, <em>last: bool = False</em>, <em>fileobj: Any = None</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#cli_ui.dot" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">cli_ui.</code><code class="descname">dot</code><span class="sig-paren">(</span><em>*</em>, <em>last: bool = False</em>, <em>fileobj: IO[str] = &lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='UTF-8'&gt;</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#cli_ui.dot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a dot without a newline unless it is the last one.</p>
 <p>Useful when you want to display a progress with very little
 knowledge.</p>
@@ -406,7 +406,7 @@ knowledge.</p>
 
 <dl class="function">
 <dt id="cli_ui.info_table">
-<code class="descclassname">cli_ui.</code><code class="descname">info_table</code><span class="sig-paren">(</span><em>data: Any, *, headers: Union[str, Dict[str, str], Sequence[str]] = (), fileobj: Any = None</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#cli_ui.info_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">cli_ui.</code><code class="descname">info_table</code><span class="sig-paren">(</span><em>data: Any, *, headers: Union[str, Dict[str, str], Sequence[str]] = (), fileobj: IO[str] = &lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='UTF-8'&gt;</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#cli_ui.info_table" title="Permalink to this definition">¶</a></dt>
 <dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">headers</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;score&quot;</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
 <span class="go">      [(bold, &quot;John&quot;), (green, 10.0)],</span>
