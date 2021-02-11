@@ -4,15 +4,14 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Python CLI UI &#8212; cli_ui 0.1.0 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Changelog" href="changelog.html" />
@@ -297,7 +296,7 @@ By default (‘auto’), only use color when output is a terminal.</p></li>
 <h3><a class="toc-backref" href="#id8">Progress messages</a><a class="headerlink" href="#progress-messages" title="Permalink to this headline">¶</a></h3>
 <dl class="py function">
 <dt id="cli_ui.dot">
-<code class="sig-prename descclassname">cli_ui.</code><code class="sig-name descname">dot</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">last: bool = False</em>, <em class="sig-param">fileobj: IO[str] = &lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='UTF-8'&gt;</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#cli_ui.dot" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">cli_ui.</code><code class="sig-name descname">dot</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">last: bool = False</em>, <em class="sig-param">fileobj: IO[str] = &lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='utf-8'&gt;</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#cli_ui.dot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a dot without a newline unless it is the last one.</p>
 <p>Useful when you want to display a progress with very little
 knowledge.</p>
@@ -390,7 +389,7 @@ knowledge.</p>
 
 <dl class="py function">
 <dt id="cli_ui.info_table">
-<code class="sig-prename descclassname">cli_ui.</code><code class="sig-name descname">info_table</code><span class="sig-paren">(</span><em class="sig-param">data: Any</em>, <em class="sig-param">*</em>, <em class="sig-param">headers: Union[str</em>, <em class="sig-param">Sequence[str]] = ()</em>, <em class="sig-param">fileobj: IO[str] = &lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='UTF-8'&gt;</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#cli_ui.info_table" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">cli_ui.</code><code class="sig-name descname">info_table</code><span class="sig-paren">(</span><em class="sig-param">data: Any</em>, <em class="sig-param">*</em>, <em class="sig-param">headers: Union[str</em>, <em class="sig-param">Sequence[str]] = ()</em>, <em class="sig-param">fileobj: IO[str] = &lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='utf-8'&gt;</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#cli_ui.info_table" title="Permalink to this definition">¶</a></dt>
 <dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">headers</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;score&quot;</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
 <span class="go">      [(bold, &quot;John&quot;), (green, 10.0)],</span>
@@ -676,7 +675,7 @@ when looking for recorded message</p>
       &copy;2017, Kontrol SAS.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
     </div>
