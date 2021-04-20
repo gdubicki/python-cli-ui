@@ -33,6 +33,17 @@
             
   <div class="section" id="changelog">
 <h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="v0-14-0">
+<h2>v0.14.0<a class="headerlink" href="#v0-14-0" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>breaking</strong>:  Remove buggy workarounds on Windows.
+Colors will now be off by default unless <code class="docutils literal notranslate"><span class="pre">cli_setup()</span></code> is called
+with <code class="docutils literal notranslate"><span class="pre">color=&quot;always&quot;</span></code>. Configurations that are known to work are
+<code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code> and <code class="docutils literal notranslate"><span class="pre">git-bash</span></code> when using <code class="docutils literal notranslate"><span class="pre">mintty</span></code>.</p></li>
+<li><p><strong>breaking</strong>:  <code class="docutils literal notranslate"><span class="pre">colorama.init()</span></code> is called uncoditionaly when <code class="docutils literal notranslate"><span class="pre">cli_ui</span></code> is
+imported</p></li>
+</ul>
+</div>
 <div class="section" id="v0-13-0">
 <h2>v0.13.0<a class="headerlink" href="#v0-13-0" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -241,6 +252,7 @@ be used as a <code class="docutils literal notranslate"><span class="pre">pytest
 <h3>Navigation</h3>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#v0-14-0">v0.14.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#v0-13-0">v0.13.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#v0-12-0">v0.12.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#v0-11-0">v0.11.0</a></li>
